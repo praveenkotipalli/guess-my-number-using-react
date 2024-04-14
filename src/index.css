@@ -14,7 +14,20 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
+  background: linear-gradient(to top left, #3c3c3c 0%, #101010 100%);
+  /* background-color: #222; */
+}
+
+.normal{
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background-image: linear-gradient(to top left, #222 0%, #484748 100%);
+}
+
+.winner{
+  font-family: 'Press Start 2P', sans-serif;
+  color: #eee;
+  background: linear-gradient(to top left, #28b487, #7dd56f);
 }
 
 header {

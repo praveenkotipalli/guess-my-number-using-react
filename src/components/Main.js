@@ -12,13 +12,11 @@ function Main() {
     document.querySelector('body').style.backgroundColor="#222";
     document.querySelector('.number').textContent="?";
     document.querySelector('.guess').value='';
+    document.querySelector('body').style.background = 'linear-gradient(to top left, #3c3c3c 0%, #101010 100%)';
+
   };
 
-  document.addEventListener('keydown',function(e){
-    if(e.key==="Enter"){
-        document.querySelector('.check').click();
-    }
-  })
+
 
   const handleCheckClick = () => {
     // Handle checking the guess here
@@ -32,7 +30,8 @@ function Main() {
         setMessage('🥳 Correct Number !');
         document.querySelector('.number').textContent = secretNumber;
         document.querySelector('.highscore').textContent = highScore;
-        document.querySelector('body').style.backgroundColor='#60b347';
+        // document.querySelector('body').style.backgroundImage='#60b347';
+        document.querySelector('body').style.background = 'linear-gradient(to top left, #28b487, #7dd56f)';
       } else {
         setMessage('😭 You lost the game, try again !');
       }
